@@ -20,7 +20,8 @@ describe Venice::InAppReceipt do
         "version_external_identifier" => "123",
         "app_item_id" => 'com.foo.app1',
         "expires_date" => "2014-06-28 07:47:53 America/Los_Angeles",
-        "expires_date_ms" => "1403941673000"
+        "expires_date_ms" => "1403941673000",
+        "cancellation_date" => "2014-05-28 14:47:53 Etc/GMT"
       }
     end
 
@@ -48,7 +49,8 @@ describe Venice::InAppReceipt do
                                           :product_id => "com.foo.product1",
                                           :transaction_id => "1000000070107235",
                                           :purchase_date => "Wed, 28 May 2014 14:47:53 GMT",
-                                          :original_purchase_date => "Wed, 28 May 2014 14:47:53 GMT"
+                                          :original_purchase_date => "Wed, 28 May 2014 14:47:53 GMT",
+                                          :cancellation_at => "Wed, 28 May 2014 14:47:53 GMT"
                                         )
     end
 
